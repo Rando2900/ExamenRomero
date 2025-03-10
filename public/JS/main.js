@@ -15,7 +15,8 @@ document.addEventListener("DOMContentLoaded", async function () {
     };
 
     // Obtener puntos de interés desde el servidor
-    const response = await fetch('/puntos');
+    const response = await fetch('https://examenromero-sj3j.onrender.com/puntos');
+
     const puntos = await response.json();
 
     puntos.forEach(punto => {

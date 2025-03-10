@@ -8,8 +8,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
-const response = await fetch('https://examenromero-sj3j.onrender.com/puntos');
-
+app.use(express.static(path.join(__dirname, 'public')));
 
 
 // Cargar datos desde los archivos GeoJSON
