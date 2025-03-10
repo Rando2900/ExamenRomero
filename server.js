@@ -8,7 +8,9 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+const response = await fetch('https://examenromero-sj3j.onrender.com/puntos');
+
+
 
 // Cargar datos desde los archivos GeoJSON
 const museos = JSON.parse(fs.readFileSync(path.join(__dirname, 'da_cultura_ocio_museos-25830.geojson'), 'utf8'));
