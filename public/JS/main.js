@@ -9,13 +9,14 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // Iconos personalizados
     const icons = {
-        Museo: L.icon({ iconUrl: '/icons/museum.png', iconSize: [40, 40] }),
-        Monumento: L.icon({ iconUrl: '/icons/location.png', iconSize: [40, 40] }),
-        Estudio: L.icon({ iconUrl: '/icons/studio.png', iconSize: [40, 40] })
+        Museo: L.icon({ iconUrl: './icons/museum.png', iconSize: [40, 40] }),
+        Monumento: L.icon({ iconUrl: './icons/location.png', iconSize: [40, 40] }),
+        Estudio: L.icon({ iconUrl: './icons/studio.png', iconSize: [40, 40] })
     };
+    
 
     // Obtener puntos de interés desde el servidor
-    const response = await fetch('https://examenromero-sj3j.onrender.com/puntos');
+    const response = await fetch('/puntos');
 
     const puntos = await response.json();
 
