@@ -1,0 +1,17 @@
+#lista-puntos {
+    cursor: pointer;
+}
+
+#lista-puntos .list-group-item:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+#map {
+    border-left: 2px solid #6c757d;
+}
+
+.swal2-popup img {
+    max-height: 200px;
+    object-fit: cover;
+}
